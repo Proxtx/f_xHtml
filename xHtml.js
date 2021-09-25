@@ -1,6 +1,6 @@
 import { parse } from "./xParser.js";
 import { build } from "./xBuilder.js";
-import { watcher as watcherImport } from "./watcher.js";
+import { watcher as watcherImport } from "./f_watcher/watcher.js";
 
 export const watcher = watcherImport;
 
