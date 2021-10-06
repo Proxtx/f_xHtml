@@ -51,6 +51,7 @@ const parsers = {
     utility.do((utility) => {
       if (utility.elem.type == "var" || utility.elem.type == "text")
         htmlObj.push(utility.elem);
+      else return true;
       if (utility.elem.type == "var") {
         varListeners.push(utility.elem.varName);
       }
