@@ -1,5 +1,4 @@
 const genCharArray = (string) => {
-  console.log("Is logging");
   let saveObj = {};
   let escapedString = "";
   let stringSplit = string.split("");
@@ -26,9 +25,6 @@ const genCharArray = (string) => {
     escaped = false;
   }
   saveObj.string = escapedString;
-  console.log(escapedString);
-  console.log(saveObj);
-  console.log(charArray);
   return charArray;
 };
 
@@ -143,8 +139,6 @@ const parsers = {
 
     utility.next();
     let varName = utility.char.getString().match(regExpLib.varEnd)[0];
-    console.log(utility.char.getString());
-    console.log(varName);
     utility.next(varName.length);
     return { type: "var", varName };
   },
